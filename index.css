@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Minion+Variable+Concept:opsz,wght@12..72,200..1000&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            width: 1200px;
+            height: 6000px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+/* Header Section */
+
+        .header-section {
+    width: 1200px;
+    height: 750px;
+    background-image: url("/dogzen/resourses/BGdogzen02.svg");
+    background-size: 1200px 750px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* Importante para referencia absoluta */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    text-align: left;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 70px;
+    height: 100%;
+    z-index: 2; /* Asegura que quede encima si es necesario */
+}
+
+.header-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: auto;
+    width: auto;
+    z-index: 1; /* Puedes ajustar el z-index según lo que necesites */
+    padding: 0;
+    vertical-align: bottom;
+}
+
+.logo-primero {
+    width: 200px;
+    height: 200px;
+    position: static;
+    margin-top: 0px;
+    margin-left: -32px;
+}
+
+.main-title {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 40pt;
+    font-weight: bold; /* Negrilla */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+    z-index: 2;
+    position: static;
+    padding-left: 0;
+    text-align: left;
+    width: 100%;
+    line-height: 0.9;
+}
+
+.vacaciones {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 45pt;
+    color: #E2A50E;
+    text-align: left;
+}
+
+.dogzen-logo {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 35pt;
+    font-weight: bold; /* Negrilla */
+    color: #E2A50E;
+    position: static;
+    text-align: left;
+    text-shadow: none;
+    margin-top: 60px;
+    margin-bottom: 0;
+    z-index: 2;
+    overflow-wrap: break-word;
+}
+
+.subtitle {
+    font-family: 'Domine', serif;
+    font-size: 16pt;
+    font-weight: 300;
+    max-width: 450px;
+    width: 450px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    z-index: 2;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.perro-gafas {
+    width: 619px;
+    height: 928.5px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    top: 68px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    transition: filter 0.3s cubic-bezier(0.4,0,0.2,1);
+    transform: 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.perro-gafas:hover {
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 40px #E5A46788);
+}
+/*primera seccion terminada*/
+
+        /* Document Section */
+
+    .document-section{
+        position: relative; /* Permite posicionar el footer internamente */
+    min-height: 750px;  /* Asegura altura mínima si es necesario */
+    padding-bottom: 0px; 
+        height: 750px;
+        background-color: white;
+        font-family: 'Minion Variable Concept', serif;
+    }
+        .document-info {
+            position: static;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+            z-index: 2;
+            margin-top: 10px;
+            margin-bottom: 0;
+            text-align: left;
+        }
+.header-document {
+            display: flex;
+            flex-direction: row;      /* Asegura disposición horizontal */
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0px 40px;
+            border-bottom: 1px solid #eee;
+            gap: 0;                  /* Elimina separación vertical */
+            text-align: left;        /* Alinea texto a la izquierda por defecto */
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-segundo {
+            width: 160px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-info {
+            font-size: 15pt;
+            line-height: 1.4;
+        }
+
+        .proposal-info {
+            text-align: right;
+            font-size: 15pt;
+            line-height: 1.4;
+            align-self: anchor-center;
+            margin-top: 0;          /* Sin margen superior extra */
+        }
+
+        /* Title Section */
+        .title-section {
+            text-align: right;
+            padding: 0px 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end; /* Justifica a la derecha */
+            align-items: center;       /* Centra verticalmente ambos elementos */
+            gap: 20px;                 /* Espacio entre huella y nombre */
+        }
+
+        .huella-negra {
+            width: 87px;
+            height: 87px;
+            margin: 0;
+            display: flex;
+            border-radius: 50%;
+        }
+
+        .nombre-cliente {
+            font-size: 29pt;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            text-align: right;
+            font-family: minion variable concept, serif;
+        }
+
+        /* Content */
+        .content-document {
+            padding: 0 195px 0 40px;
+            margin-top: 0px;
+        }
+
+        .greeting {
+            font-size: 16pt;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .content-text {
+            font-size: 14pt;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .closing-text {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        /* Footer */
+        .footer-document {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; /* Uno a la izquierda y otro a la derecha */
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+            position: relative;
+            margin-top: -45px;
+            padding: 0px 40px;
+            padding-bottom: 48px; /* Espacio para el footer-copyright, ajusta según altura */
+        }
+        
+        .contenedorderechafot{
+                flex-direction: column;
+
+        }
+
+        .developer-info {
+            
+            gap: 20px;
+        }
+
+        .perro-footer {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            margin: 0;
+            margin-right: -50px;
+            object-fit: contain;
+            
+        }
+
+        .developer-details h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .developer-details p {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .icono-pequeño {
+            width: 38px;
+            height: 38px;
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            margin-left: 20px;
+        }
+
+        .social-icons {
+            width: 40px;
+            height: 40px;
+            display: flex;
+        }
+
+        .copyright {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        
+
+            .header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .proposal-info {
+                text-align: center;
+            }
+
+            .content {
+                padding: 0 20px;
+            }
+
+            .footer {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+                position: relative;
+                margin-top: 40px;
+            }
+
+            .developer-info {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .copyright {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                text-align: center;
+                margin-top: 20px;
+            }
+        
+            .footer-copyright {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    text-align: left;
+    padding: 12px 0 12px 40px;
+    font-size: 13pt;
+    font-family: 'Minion Variable Concept', serif;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+/* fin de la parte de documento*/
+
+        /* parte de la mision*/
+
+
+        .mision-section {
+            width: 1200px;
+            height: 620px;
+    background-image: url("/dogzen/resourses/background2-03.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* Importante para referencia absoluta */
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    margin-top: -10px;
+    flex-direction: column;
+        }
+
+.mission-description{
+    padding-left: 110px;
+    padding-right: 500px;
+    font-family: domine, serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+.mission-description-text{
+    padding-left: 110px;
+    padding-right: 500px;
+    font-family: domine, serif;
+    font-size: 20pt;
+
+}
+
+.landing-alert-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background: #718A91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -100;
+    pointer-events: none; /* Permite interactuar con el contenido maquetado */
+}
+
+.landing-alert {
+    color: #A68C74;
+    font-size: 3rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: rgba(255,255,255,0.05);
+    padding: 40px 80px;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.15);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #000, 0 0 2px #fff;
+    transition: text-shadow 0.3s cubic-bezier(0.4,0,0.2,1), color 0.3s cubic-bezier(0.4,0,0.2,1);
+    pointer-events: auto; /* Permite hover en el mensaje */
+}
+
+.landing-alert:hover {
+    color: #fff;
+    text-shadow: 0 0 24px #A68C74, 0 0 8px #fff, 2px 2px 8px #000;
+}
+
